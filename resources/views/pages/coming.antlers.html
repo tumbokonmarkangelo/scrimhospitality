@@ -1,14 +1,16 @@
-<div>
-    <p class="text-xl">
-        {{ coming_text }}
-    </p>
-    <p class="text-xl text-gray-800">
-        {{ coming_subtext }}
-    </p>
-</div>
-<div>
-    <img src="{{coming_logo}}">
-</div>
-<div>
-    <img src="{{coming_background}}">
+<div class="relative w-full h-screen overflow-hidden">
+    <div class="coming-bg-with-overlay">
+        <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="{{coming_background}}">
+    </div>
+    <div class="relative h-full flex justify-center z-10 p-4">
+        <div class="flex items-center justify-center flex-col gap-3">
+            <img src="{{coming_logo}}">
+            <p class="text-3xl text-white font-bold font-mono">
+                {{ coming_text }}
+            </p>
+            <p class="text-xl text-white font-mono">
+                {{ coming_subtext }}
+            </p>
+        </div>
+    </div>
 </div>

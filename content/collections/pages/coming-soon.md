@@ -6,10 +6,9 @@ author: 8e9abffb-d79b-46bd-9f70-6b8842586fbb
 template: pages/coming
 layout: layouts/layout
 updated_by: 8e9abffb-d79b-46bd-9f70-6b8842586fbb
-updated_at: 1699580271
+updated_at: 1699593341
 coming_text: 'Coming Text'
 coming_subtext: 'Coming Subtext'
-coming_logo: image-299.jpg
-coming_background:
-  - dummy_600x300_ffffff_aaaaaa.png
+coming_logo: logoipsum-300.svg
+coming_background: image-299.jpg
 ---

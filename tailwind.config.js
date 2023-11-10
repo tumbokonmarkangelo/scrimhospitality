@@ -11,6 +11,9 @@ export default {
 
     theme: {
         extend: {},
+        fontFamily: {
+          'sans': ['aldrich', 'sans-serif'],
+        },
     },
 
     plugins: [
