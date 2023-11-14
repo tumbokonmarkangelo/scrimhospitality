@@ -11,6 +11,7 @@ require('laravel-mix-purgecss');
  |
  */
 mix.ts('resources/ts/app.ts', 'public/js')
+    .js('resources/js/site.js', 'public/js')
     .sass('resources/sass/styles.scss', 'public/css')
     .browserSync({
         host: '192.68.56.10',
