@@ -13,3 +13,22 @@
 .landing-banner {
   min-height: calc(100vh - 5rem);
 }
+
+.slick-prev {
+  left: -60px;
+}
+.slick-prev:before {
+  content: "";
+}
+
+.slick-next {
+  right: -60px;
+}
+.slick-next:before {
+  content: "";
+}
+
+.slick-prev, .slick-next {
+  top: 20%;
+  width: 80px;
+}

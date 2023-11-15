@@ -364,6 +364,8 @@ video {
   margin-bottom: 2.5rem;
 }.mb-20 {
   margin-bottom: 5rem;
+}.mb-32 {
+  margin-bottom: 8rem;
 }.mb-8 {
   margin-bottom: 2rem;
 }.mt-20 {
@@ -372,6 +374,8 @@ video {
   display: inline;
 }.flex {
   display: flex;
+}.hidden {
+  display: none;
 }.h-0 {
   height: 0px;
 }.h-0\.5 {
@@ -386,6 +390,8 @@ video {
   height: 8rem;
 }.h-80 {
   height: 20rem;
+}.h-96 {
+  height: 24rem;
 }.h-full {
   height: 100%;
 }.h-screen {
@@ -418,6 +424,8 @@ video {
   max-width: 48rem;
 }.max-w-lg {
   max-width: 32rem;
+}.max-w-md {
+  max-width: 28rem;
 }.max-w-xl {
   max-width: 36rem;
 }.flex-1 {
@@ -439,6 +447,8 @@ video {
   justify-content: center;
 }.justify-between {
   justify-content: space-between;
+}.gap-12 {
+  gap: 3rem;
 }.gap-16 {
   gap: 4rem;
 }.gap-3 {
@@ -449,14 +459,14 @@ video {
   gap: 1.5rem;
 }.gap-8 {
   gap: 2rem;
-}.gap-10 {
-  gap: 2.5rem;
 }.overflow-hidden {
   overflow: hidden;
 }.whitespace-nowrap {
   white-space: nowrap;
 }.rounded-full {
   border-radius: 9999px;
+}.border-b-2 {
+  border-bottom-width: 2px;
 }.border-b-4 {
   border-bottom-width: 4px;
 }.bg-brown-1 {
@@ -479,9 +489,9 @@ video {
      object-fit: cover;
 }.p-4 {
   padding: 1rem;
-}.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+}.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }.px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -497,25 +507,22 @@ video {
 }.py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }.py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }.pb-4 {
   padding-bottom: 1rem;
 }.pb-6 {
   padding-bottom: 1.5rem;
+}.pb-8 {
+  padding-bottom: 2rem;
 }.pt-4 {
   padding-top: 1rem;
 }.text-center {
   text-align: center;
-}.text-right {
-  text-align: right;
 }.text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -531,9 +538,6 @@ video {
 }.text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }.font-bold {
   font-weight: 700;
 }.font-semibold {
@@ -549,15 +553,49 @@ video {
 }.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }.underline {
   text-decoration-line: underline;
-}.opacity-50 {
-  opacity: 0.5;
-}/* This is all you. */@media (min-width: 1024px) {.lg\:flex-row {
+}/* Trigger  */.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}/* Optional Delays, change values here  */.one { animation-delay: 0.2s; }.two { animation-delay: .6s; }.three { animation-delay: 1s; }.four { animation-delay: 1.4s; }/* Animations start here  *//* FADE IN  */@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; } }.fadeIn { animation-name: fadeIn; }/* FADE IN DOWN */@keyframes fadeInDown {
+from { opacity: 0; transform: translate3d(0, -100%, 0); }
+to { opacity: 1; transform: none; } }.fadeInDown { animation-name: fadeInDown; }/* FADE IN UP */@keyframes fadeInUp {
+from { opacity: 0; transform: translate3d(0, 20px, 0); }
+to { opacity: 1; transform: none; } }.fadeInUp { animation-name: fadeInUp; }/* FADE IN UP BIG */@keyframes fadeInUpBig {
+from { opacity: 0; transform: translate3d(0, 100px, 0); }
+to { opacity: 1; transform: none; } }.fadeInUpBig { animation-name: fadeInUpBig; }/* FADE IN LEFT */@keyframes fadeInLeft {
+from { opacity: 0; transform: translate3d(-30px, 0, 0)rotateZ(30deg); }
+to { opacity: 1; transform: none; } }.fadeInLeft { animation-name: fadeInLeft; }/* FADE IN LEFT BIG */@keyframes fadeInLeftBig {
+from { opacity: 0; transform: translate3d(-100px, 0, 0); }
+to { opacity: 1; transform: none; } }.fadeInLeftBig { animation-name: fadeInLeftBig; }/* FADE IN RIGHT */@keyframes fadeInRight {
+from { opacity: 0; transform: translate3d(100%, 0, 0); }
+to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight; }/* @end standaard animaties  */.callout {
+    max-width: 500px;
+    margin:0 auto;
+    padding-bottom:100px
+}.animate-1.in-view {
+    animation: fadeInUpBig 1s;
+}.animate-2.in-view {  
+    animation: fadeInLeftBig;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+}@media (min-width: 1024px) {.lg\:flex {
+    display: flex;
+  }.lg\:h-full {
+    height: 100%;
+  }.lg\:h-screen {
+    height: 100vh;
+  }.lg\:flex-1 {
+    flex: 1 1 0%;
+  }.lg\:flex-row {
     flex-direction: row;
+  }.lg\:gap-4 {
+    gap: 1rem;
   }.lg\:text-center {
     text-align: center;
   }.lg\:text-right {
@@ -567,4 +605,3 @@ video {
     line-height: 1;
   }
 }
-
