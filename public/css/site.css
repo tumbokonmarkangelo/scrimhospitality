@@ -596,6 +596,9 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     flex-direction: row;
   }.lg\:gap-4 {
     gap: 1rem;
+  }.lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }.lg\:text-center {
     text-align: center;
   }.lg\:text-right {

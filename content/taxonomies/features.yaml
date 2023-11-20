@@ -1,0 +1,6 @@
+title: features
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true

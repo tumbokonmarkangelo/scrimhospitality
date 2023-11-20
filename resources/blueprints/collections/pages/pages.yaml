@@ -66,6 +66,200 @@ tabs:
               listable: hidden
               instructions_position: above
       -
+        display: 'Banner Section'
+        fields:
+          -
+            handle: banner_background
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Banner background'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'About Section'
+        fields:
+          -
+            handle: about_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'About title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: about_text
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: 'About text'
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: about_images
+            field:
+              max_files: 2
+              min_files: 2
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'About images'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Brand Section'
+        fields:
+          -
+            handle: brands_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Brands title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: brands_text
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - orderedlist
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: 'Brands text'
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Gallery Section'
+        fields:
+          -
+            handle: gallery
+            field:
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Gallery
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Qoute Section'
+        fields:
+          -
+            handle: qoute_text
+            field:
+              antlers: false
+              type: textarea
+              display: 'Qoute text'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: qoute_author
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Qoute author'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: qoute_author_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Qoute author title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: qoute_images
+            field:
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Qoute images'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
         display: 'Coming soon'
         instructions: 'For "Coming soon" page only'
         fields:

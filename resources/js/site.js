@@ -36,7 +36,8 @@ $(function() {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              arrows: false,
             }
           }
           // You can unslick at a given breakpoint now by adding:
@@ -71,7 +72,8 @@ $(function() {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              arrows: false,
             }
           }
           // You can unslick at a given breakpoint now by adding:
