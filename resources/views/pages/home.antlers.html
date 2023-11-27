@@ -1,16 +1,15 @@
 <div class="landing-banner relative flex justify-center text-white items-center animation-element animate-1">
     <div class="coming-bg-with-overlay">
-        <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="https://picsum.photos/200/300?random=11">
+        <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="{{coming_background}}">
     </div>
     <div class="flex-1 relative z-10 p-4 animation-element animate-1">
         <div class="flex items-center justify-center flex-col gap-6">
             <h1 class="text-3xl lg:text-5xl font-bold flex gap-4 w-full justify-center flex-col lg:flex-row">
                 <span class="flex-1 lg:text-right py-4">bringing</span>
                 <div class="scroll-up-slider max-w-xl border-b-4 px-4 flex flex-col">
-                    <span class="whitespace-nowrap lg:text-center py-4">unique ideas</span>
-                    <span class="whitespace-nowrap lg:text-center py-4">new concepts</span>
-                    <span class="whitespace-nowrap lg:text-center py-4">quality living</span>
-                    <span class="whitespace-nowrap lg:text-center py-4">special celebrations</span>
+                    {{ taxonomy:banner-tags }}
+                    <span class="whitespace-nowrap lg:text-center py-4">{{title}}</span>
+                    {{ /taxonomy:banner-tags }}
                 </div>
                 <span class="flex-1 py-4">to life</span>
             </h1>
@@ -22,15 +21,15 @@
     <div class="flex-1 flex gap-12 lg:gap-4 lg:h-full py-20 flex-col lg:flex-row">
         <div class="lg:flex-1 lg:h-full h-96 animation-element animate-2">
             <div class="relative h-full max-w-2xl">
-                <img class="absolute top-0 left-0 object-cover w-4/6 h-3/4" src="https://picsum.photos/200/300?random=12">
-                <img class="absolute bottom-0 right-0 object-cover w-4/6 h-3/4" src="https://picsum.photos/200/300?random=13">
+                {{about_images}}
+                <img class="absolute {{index == 1 ? 'bottom-0 right-0' : 'top-0 left-0'}} object-cover w-4/6 h-3/4" src="{{url}}">
+                {{/about_images}}
             </div>
         </div>
         <div class="flex-1 flex items-center animation-element animate-2">
             <div class="flex flex-col gap-4 max-w-xl px-5">
-                <h1 class="text-5xl font-bold text-brown-2">THE GROUP</h1>
-                <p class="text-lg">Welcome to the world of <b>SCRIM Group of Companies,</b> where dreams become reality, and every experience is truly extraordinary and we are up for more new concepts that screams change, sustainability and to improve quality of living.</p>
-                <p class="text-lg"><b>Screaming Change</b>  . Innovation and evolution are in our DNA. We welcome change with open arms, embracing new concepts, and ideas that keep us at the forefront of the entertainment landscape. Our adaptability ensures that we stay ahead of trends, continuously elevating our offerings to meet the evolving needs and desires of our audience.</p>
+                <h1 class="text-5xl font-bold text-brown-2">{{about_title}}</h1>
+                <div class="text-lg">{{about_text}}</div>
                 <div class="flex justify-start">
                     <a href="/#About" class="text-white bg-brown-2 font-semibold uppercase text-lg px-6 py-6 w-auto">
                         More About Us
@@ -47,8 +46,8 @@
 <div class="w-11/12 mx-auto py-20 px-4 animation-element animate-1">
     <div class="flex gap-4 flex-col lg:flex-row">
         <div class="flex-1 flex flex-col gap-4">
-            <h1 class="text-5xl font-bold text-brown-2">OUR BRANDS</h1>
-            <p class="text-lg max-w-3xl">Sunset Hospitality Group remains committed to delivering unparalleled hospitality concepts, exceptional lifestyle experiences, unforgettable entertainment acts and culinary excellence. That's why we have tailored our offerings to cater to the needs of lifestyle enthusiasts through our four distinct divisions: Hotels & Resorts, Daylife, Dining, and Nightlife.</p>
+            <h1 class="text-5xl font-bold text-brown-2">{{brands_title}}</h1>
+            <div class="text-lg max-w-3xl">{{brands_text}}</div>
         </div>
         <div class="flex-1 flex items-center justify-center">
             <a href="/#Features" class="text-white bg-brown-2 font-semibold uppercase text-lg px-6 py-6 w-auto">
@@ -63,7 +62,7 @@
 
 <div class="w-11/12 mx-auto py-20 px-4">
     <div class="flex gap-8 flex-col lg:flex-row">
-        <div class="flex-1 h-full flex flex-col gap-8">
+        <div class="flex-1 h-full grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div class="relative flex-1 animation-element animate-2">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=14">
             </div>
@@ -76,8 +75,6 @@
             <div class="relative flex-1 animation-element animate-1">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=4">
             </div>
-        </div>
-        <div class="flex-1 h-full flex flex-col gap-8">
             <div class="relative flex-1 animation-element animate-2">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=5">
             </div>
@@ -90,8 +87,6 @@
             <div class="relative flex-1 animation-element animate-1">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=8">
             </div>
-        </div>
-        <div class="flex-1 h-full flex flex-col gap-8">
             <div class="relative flex-1 animation-element animate-2">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=9">
             </div>
@@ -104,8 +99,6 @@
             <div class="relative flex-1 animation-element animate-1">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=17">
             </div>
-        </div>
-        <div class="flex-1 h-full flex flex-col gap-8">
             <div class="relative flex-1 animation-element animate-2">
                 <img class="object-cover w-full h-96" src="https://picsum.photos/200/300?random=18">
             </div>
@@ -125,17 +118,18 @@
 <div class="w-11/12 mx-auto py-20 px-4 animation-element animate-1">
     <h1 class="text-5xl font-bold text-brown-2 uppercase mb-8">Features</h1>
     <div class="flex gap-16 justify-between flex-col lg:flex-row">
+        {{ taxonomy:features }}
         <div class="flex flex-1 gap-4 flex-col bg-gray-2 max-w-lg">
             <div class="px-4 pt-4 flex gap-8">
                 <span class="uppercase font-semibold">Features</span>
-                <span class="text-gray-3">Jul 28, 2023</span>
+                <span class="text-gray-3">{{date}}</span>
             </div>
             <div class="px-4 pb-4">
-                <p class="text-xl">When In Manila: Meet The Newest Al Fresco Bar of the Town</p>
+                <div class="text-xl">{{content}}</div>
             </div>
             <div>
                 <div class="relative flex-1 h-80">
-                    <img class="object-cover w-full h-full" src="https://picsum.photos/200/300?random=23">
+                    <img class="object-cover w-full h-full" src="{{image}}">
                 </div>
             </div>
             <div class="px-6 pb-6">
@@ -144,46 +138,7 @@
                 </svg>  
             </div>
         </div>
-        
-        <div class="flex flex-1 gap-4 flex-col bg-gray-2 max-w-lg">
-            <div class="px-4 pt-4 flex gap-8">
-                <span class="uppercase font-semibold">Features</span>
-                <span class="text-gray-3">Jul 28, 2023</span>
-            </div>
-            <div class="px-4 pb-4">
-                <p class="text-xl">#FilipinoPride: This Filipino Restaurant Bagged Best Local Gem in Dubai Expo 2020!</p>
-            </div>
-            <div>
-                <div class="relative flex-1 h-80">
-                    <img class="object-cover w-full h-full" src="https://picsum.photos/200/300?random=22">
-                </div>
-            </div>
-            <div class="px-6 pb-6">
-                <svg class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                </svg>  
-            </div>
-        </div>
-        
-        <div class="flex flex-1 gap-4 flex-col bg-gray-2 max-w-lg">
-            <div class="px-4 pt-4 flex gap-8">
-                <span class="uppercase font-semibold">Features</span>
-                <span class="text-gray-3">Jul 28, 2023</span>
-            </div>
-            <div class="px-4 pb-4">
-                <p class="text-xl">Discover the City's Hidden Gem: A Stylish Al Fresco Bar Unveiled by spot.ph!</p>
-            </div>
-            <div>
-                <div class="relative flex-1 h-80">
-                    <img class="object-cover w-full h-full" src="https://picsum.photos/200/300?random=23">
-                </div>
-            </div>
-            <div class="px-6 pb-6">
-                <svg class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                </svg>  
-            </div>
-        </div>
+        {{ /taxonomy:features }}
     </div>
 
     <div class="flex justify-center mt-20">
@@ -201,20 +156,16 @@
     <div class="h-0.5 bg-gray-3 mb-20"></div>
     <div class="flex items-center flex-col mb-10">
         <img class="object-cover w-20 rotate-180 mb-10" src="/assets/quotation.svg">
-        <p class="max-w-2xl mb-10 text-xl">SCRIM Group is definitely doing something ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor ultrices enim a tincidunt. Vivamus sed dui ultrices, consectetur ipsum ut, sollicitudin orci. Nunc eu metus ac ligula porttitor dapibus at id tellus.</p>
-        <p class="text-2xl">Sam Verzosa</p>
-        <p class="text-lg text-gray-3">Business Mogul</p>
+        <p class="max-w-2xl mb-10 text-xl">{{qoute_text}}</p>
+        <p class="text-2xl">{{qoute_author}}</p>
+        <p class="text-lg text-gray-3">{{qoute_author_title}}</p>
     </div>
     <div class="flex justify-center items-center gap-8">
+        {{qoute_images}}
         <div>
-           <img class="rounded-full w-32 h-32" src="https://picsum.photos/200/300?random=24"> 
+           <img class="rounded-full w-32 h-32" src="{{url}}">
         </div>
-        <div>
-           <img class="rounded-full w-32 h-32" src="https://picsum.photos/200/300?random=25"> 
-        </div>
-        <div>
-           <img class="rounded-full w-32 h-32" src="https://picsum.photos/200/300?random=26"> 
-        </div>
+        {{/qoute_images}}
     </div>
 </div>
 
@@ -228,62 +179,19 @@
             </div>
         </div>
         {{ /taxonomy:brands }}
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=28"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=29"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=30"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=37"> 
-            </div>
-        </div>
     </div>
 </div>
 
 <div class="py-20 px-4 lg:px-20 animation-element animate-2">
     <h1 class="text-5xl font-bold text-brown-2 uppercase text-center mb-32">AFFILIATIONS</h1>
     <div class="affiliation-slider">
+        {{ taxonomy:affiliations }}
         <div>
             <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=31"> 
+                <img class="h-32" src="{{logo}}"> 
             </div>
         </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=32"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=33"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=34"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=35"> 
-            </div>
-        </div>
-        <div>
-            <div class="flex align-center justify-center">
-                <img class="h-32" src="https://picsum.photos/300/100?random=45"> 
-            </div>
-        </div>
+        {{ /taxonomy:affiliations }}
     </div>
 </div>
 

@@ -85,6 +85,8 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              max_files: 1
+              min_files: 1
       -
         display: 'About Section'
         fields:
@@ -259,6 +261,26 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              min_files: 1
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
       -
         display: 'Coming soon'
         instructions: 'For "Coming soon" page only'
@@ -325,22 +347,3 @@ tabs:
               replicator_preview: true
               hide_display: false
               max_files: 1
-  sidebar:
-    display: Sidebar
-    sections:
-      -
-        fields:
-          -
-            handle: slug
-            field:
-              type: slug
-              localizable: true
-          -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - pages
-              max_items: 1
-              listable: false
-              localizable: true

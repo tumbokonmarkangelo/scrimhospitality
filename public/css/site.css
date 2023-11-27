@@ -374,6 +374,8 @@ video {
   display: inline;
 }.flex {
   display: flex;
+}.grid {
+  display: grid;
 }.hidden {
   display: none;
 }.h-0 {
@@ -433,6 +435,10 @@ video {
 }.rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }.flex-row {
   flex-direction: row;
 }.flex-col {
@@ -489,9 +495,6 @@ video {
      object-fit: cover;
 }.p-4 {
   padding: 1rem;
-}.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }.px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -592,6 +595,8 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     height: 100vh;
   }.lg\:flex-1 {
     flex: 1 1 0%;
+  }.lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }.lg\:flex-row {
     flex-direction: row;
   }.lg\:gap-4 {
