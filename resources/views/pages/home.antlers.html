@@ -4,11 +4,11 @@
     </div>
     <div class="flex-1 relative z-10 p-4 animation-element animate-1">
         <div class="flex items-center justify-center flex-col gap-6">
-            <h1 class="text-3xl lg:text-5xl font-bold flex gap-4 w-full justify-center flex-col lg:flex-row">
+            <h1 class="text-3xl lg:text-5xl flex w-full justify-center flex-col lg:flex-row">
                 <span class="flex-1 lg:text-right py-4">bringing</span>
-                <div class="scroll-up-slider max-w-xl border-b-4 px-4 flex flex-col">
+                <div class="scroll-up-slider max-w-sm px-4 flex flex-col">
                     {{ taxonomy:banner-tags }}
-                    <span class="whitespace-nowrap lg:text-center py-4">{{title}}</span>
+                    <span class="whitespace-nowrap lg:text-center py-4 font-bold">{{title}}</span>
                     {{ /taxonomy:banner-tags }}
                 </div>
                 <span class="flex-1 py-4">to life</span>
@@ -17,26 +17,33 @@
     </div>
 </div>
 
-<div class="w-11/12 lg:h-screen mx-auto py-2 px-4">
-    <div class="flex-1 flex gap-12 lg:gap-4 lg:h-full py-20 flex-col lg:flex-row">
-        <div class="lg:flex-1 lg:h-full h-96 animation-element animate-2">
-            <div class="relative h-full max-w-2xl">
+<div class="w-11/12 mx-auto py-2 px-4">
+    <div class="flex-1 flex gap-12 lg:gap-4 py-20 flex-col">
+        <div class="lg:flex-1 animation-element animate-2">
+            <div class="about-slider">
                 {{about_images}}
-                <img class="absolute {{index == 1 ? 'bottom-0 right-0' : 'top-0 left-0'}} object-cover w-4/6 h-3/4" src="{{url}}">
+                <div class="p-4">
+                    <img class="w-full h-64 object-cover" src="{{url}}">
+                </div>
                 {{/about_images}}
             </div>
         </div>
         <div class="flex-1 flex items-center animation-element animate-2">
-            <div class="flex flex-col gap-4 max-w-xl px-5">
-                <h1 class="text-5xl font-bold text-brown-2">{{about_title}}</h1>
-                <div class="text-lg">{{about_text}}</div>
-                <div class="flex justify-start">
-                    <a href="/#About" class="text-white bg-brown-2 font-semibold uppercase text-lg px-6 py-6 w-auto">
-                        More About Us
-                        <svg class="w-4 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"></path>
-                        </svg>
-                    </a>
+            <div class="flex flex-col lg:flex-row col-2 gap-4 px-5">
+                <div class="flex-1">
+                    <h1 class="text-5xl font-bold text-brown-2 mb-10">{{about_title}}</h1>
+                    <div class="text-lg">{{about_text_1}}</div>
+                </div>
+                <div class="flex-1">
+                    <div class="text-lg">{{about_text_2}}</div>
+                    <div class="flex justify-end mt-10">
+                        <a href="/#About" class="border-b-2 border-brown-2 text-brown-2 font-semibold uppercase text-lg py-6 w-auto">
+                            More About Us
+                            <svg class="w-4 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,7 +56,7 @@
             <h1 class="text-5xl font-bold text-brown-2">{{brands_title}}</h1>
             <div class="text-lg max-w-3xl">{{brands_text}}</div>
         </div>
-        <div class="flex-1 flex items-center justify-center">
+        <div class="flex-1 flex items-center justify-start lg:justify-center">
             <a href="/#Features" class="text-white bg-brown-2 font-semibold uppercase text-lg px-6 py-6 w-auto">
                 More Concepts
                 <svg class="w-4 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

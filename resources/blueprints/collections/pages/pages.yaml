@@ -104,7 +104,7 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: about_text
+            handle: about_text_1
             field:
               restrict: false
               buttons:
@@ -118,7 +118,29 @@ tabs:
               table_of_contents: false
               antlers: false
               type: markdown
-              display: 'About text'
+              display: 'About text 1'
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: about_text_2
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: 'About text 2'
               icon: markdown
               listable: hidden
               instructions_position: above
@@ -184,7 +206,7 @@ tabs:
               replicator_preview: true
               hide_display: false
       -
-        display: 'Gallery Section'
+        display: 'Gallery Section (to be removed)'
         fields:
           -
             handle: gallery
@@ -204,7 +226,7 @@ tabs:
               replicator_preview: true
               hide_display: false
       -
-        display: 'Qoute Section'
+        display: 'Qoute Section (to be removed)'
         fields:
           -
             handle: qoute_text
@@ -272,6 +294,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:

@@ -6,9 +6,8 @@ template: pages/home
 author: fae438cb-8cff-4366-be50-3f2096887411
 layout: layouts/layout
 updated_by: 8e9abffb-d79b-46bd-9f70-6b8842586fbb
-updated_at: 1700794197
-banner_background:
-  - image-299.jpg
+updated_at: 1702754737
+banner_background: image-299.jpg
 about_title: 'THE GROUP'
 about_text: |-
   Welcome to the world of **SCRIM Group of Companies**, where dreams become reality, and every experience is truly extraordinary and we are up for more new concepts that screams change, sustainability and to improve quality of living.
@@ -29,6 +28,8 @@ qoute_images:
   - placeholder.jpg
   - image-299.jpg
 coming_background: image-299.jpg
+about_text_1: 'Welcome to the world of **SCRIM Group of Companies**, where dreams become reality, and every experience is truly extraordinary and we are up for more new concepts that screams change, sustainability and to improve quality of living.'
+about_text_2: '**Screaming Change**. Innovation and evolution are in our DNA. We welcome change with open arms, embracing new concepts, and ideas that keep us at the forefront of the entertainment landscape. Our adaptability ensures that we stay ahead of trends, continuously elevating our offerings to meet the evolving needs and desires of our audience.'
 ---
 ## Welcome to your new brand Statamic site!
 

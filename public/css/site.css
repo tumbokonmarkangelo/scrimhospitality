@@ -370,6 +370,10 @@ video {
   margin-bottom: 2rem;
 }.mt-20 {
   margin-top: 5rem;
+}.mt-12 {
+  margin-top: 3rem;
+}.mt-10 {
+  margin-top: 2.5rem;
 }.inline {
   display: inline;
 }.flex {
@@ -398,6 +402,8 @@ video {
   height: 100%;
 }.h-screen {
   height: 100vh;
+}.h-64 {
+  height: 16rem;
 }.max-h-20 {
   max-height: 5rem;
 }.w-10\/12 {
@@ -430,13 +436,13 @@ video {
   max-width: 28rem;
 }.max-w-xl {
   max-width: 36rem;
+}.max-w-sm {
+  max-width: 24rem;
 }.flex-1 {
   flex: 1 1 0%;
 }.rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }.grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }.flex-row {
@@ -475,21 +481,29 @@ video {
   border-bottom-width: 2px;
 }.border-b-4 {
   border-bottom-width: 4px;
+}.border-brown-2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(68 45 37 / var(--tw-border-opacity));
 }.bg-brown-1 {
   --tw-bg-opacity: 1;
   background-color: rgb(41 31 28 / var(--tw-bg-opacity));
 }.bg-brown-2 {
   --tw-bg-opacity: 1;
   background-color: rgb(68 45 37 / var(--tw-bg-opacity));
-}.bg-gray-1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 233 232 / var(--tw-bg-opacity));
 }.bg-gray-2 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }.bg-gray-3 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 183 172 / var(--tw-bg-opacity));
+}.bg-contain {
+  background-size: contain;
+}.bg-cover {
+  background-size: cover;
+}.bg-center {
+  background-position: center;
+}.bg-top {
+  background-position: top;
 }.object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -599,6 +613,8 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }.lg\:flex-row {
     flex-direction: row;
+  }.lg\:justify-center {
+    justify-content: center;
   }.lg\:gap-4 {
     gap: 1rem;
   }.lg\:px-20 {
