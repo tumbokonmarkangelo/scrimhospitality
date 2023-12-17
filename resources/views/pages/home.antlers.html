@@ -1,6 +1,6 @@
 <div class="landing-banner relative flex justify-center text-white items-center animation-element animate-1">
     <div class="coming-bg-with-overlay">
-        <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="{{coming_background}}">
+        <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="{{banner_background}}">
     </div>
     <div class="flex-1 relative z-10 p-4 animation-element animate-1">
         <div class="flex items-center justify-center flex-col gap-6">
@@ -19,7 +19,7 @@
 
 <div class="w-11/12 mx-auto py-2 px-4">
     <div class="flex-1 flex gap-12 lg:gap-4 py-20 flex-col">
-        <div class="lg:flex-1 animation-element animate-2">
+        <div class="lg:flex-1 animation-element animate-2 mb-10">
             <div class="about-slider">
                 {{about_images}}
                 <div class="p-4">
@@ -72,12 +72,12 @@
 
 <div class="w-11/12 mx-auto py-20 px-4">
     <div class="flex gap-8 flex-col lg:flex-row">
-        <div class="flex-1 h-full grid grid-cols-1 lg:grid-cols-4 gap-8">
-            {{gallery}}
+        <div class="gallery-images w-full h-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {{taxonomy:gallery}}
             <div class="relative flex-1 animation-element animate-2">
-                <img class="object-cover w-full h-96" src="{{url}}">
+                <img class="object-cover w-full h-96" src="{{image}}">
             </div>
-            {{/gallery}}
+            {{/taxonomy:gallery}}
         </div>
     </div>
 </div>
@@ -121,18 +121,26 @@
 
 <div class="w-11/12 mx-auto py-20 px-4 animation-element animate-2">
     <div class="h-0.5 bg-gray-3 mb-20"></div>
-    <div class="flex items-center flex-col mb-10">
-        <img class="object-cover w-20 rotate-180 mb-10" src="/assets/quotation.svg">
-        <p class="max-w-2xl mb-10 text-xl">{{qoute_text}}</p>
-        <p class="text-2xl">{{qoute_author}}</p>
-        <p class="text-lg text-gray-3">{{qoute_author_title}}</p>
-    </div>
-    <div class="flex justify-center items-center gap-8">
-        {{qoute_images}}
+    <div class="slider-for">
+        {{taxonomy:qoutes}}
         <div>
-           <img class="rounded-full w-32 h-32" src="{{url}}">
+            <div class="flex items-center flex-col mb-10">
+                <img class="object-cover w-20 rotate-180 mb-10" src="/assets/quotation.svg">
+                <p class="max-w-2xl mb-10 text-xl">{{qoute_text}}</p>
+                <p class="text-2xl">{{qoute_author}}</p>
+                <p class="text-lg text-gray-3">{{qoute_author_title}}</p>
+            </div>
         </div>
-        {{/qoute_images}}
+        {{/taxonomy:qoutes}}
+    </div>
+    <div class="flex justify-center items-center gap-8 slider-nav">
+        {{taxonomy:qoutes}}
+        <div class="p-2">
+            <div class="flex justify-center align-center cursor-pointer">
+                <img class="rounded-full w-32 h-32" src="{{qoute_image}}">
+            </div>
+        </div>
+        {{/taxonomy:qoutes}}
     </div>
 </div>
 
@@ -140,7 +148,7 @@
     <h1 class="text-2xl lg:text-5xl font-bold text-white uppercase text-center pb-8 border-b-2 mx-auto max-w-md mb-32">OUR BRANDS</h1>
     <div class="brand-slider">
         {{ taxonomy:brands }}
-        <div>
+        <div class="p-4">
             <div class="flex align-center justify-center">
                 <img class="h-32" src="{{logo}}">
             </div>
@@ -153,7 +161,7 @@
     <h1 class="text-2xl lg:text-5xl font-bold text-brown-2 uppercase text-center mb-32">AFFILIATIONS</h1>
     <div class="affiliation-slider">
         {{ taxonomy:affiliations }}
-        <div>
+        <div class="p-4">
             <div class="flex align-center justify-center">
                 <img class="h-32" src="{{logo}}"> 
             </div>

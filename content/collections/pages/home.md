@@ -6,16 +6,26 @@ template: pages/home
 author: fae438cb-8cff-4366-be50-3f2096887411
 layout: layouts/layout
 updated_by: 8e9abffb-d79b-46bd-9f70-6b8842586fbb
-updated_at: 1702754737
-banner_background: image-299.jpg
+updated_at: 1702772216
+banner_background: gallery/dscf5730.jpg
 about_title: 'THE GROUP'
 about_text: |-
   Welcome to the world of **SCRIM Group of Companies**, where dreams become reality, and every experience is truly extraordinary and we are up for more new concepts that screams change, sustainability and to improve quality of living.
 
   **Screaming Change** . Innovation and evolution are in our DNA. We welcome change with open arms, embracing new concepts, and ideas that keep us at the forefront of the entertainment landscape. Our adaptability ensures that we stay ahead of trends, continuously elevating our offerings to meet the evolving needs and desires of our audience.
 about_images:
-  - image-299.jpg
-  - placeholder.jpg
+  - gallery/arcovia.jpg
+  - gallery/dsc00363.jpg
+  - gallery/dscf0026.jpg
+  - gallery/dscf4545.jpg
+  - gallery/dscf5730.jpg
+  - gallery/dscf5748.jpg
+  - gallery/dscf6189.jpg
+  - gallery/img_3075.jpg
+  - gallery/img_5685.jpg
+  - gallery/incanta.jpg
+  - gallery/snapinsta.app_136819078_193031042519820_1895777432607785109_n_1080.jpg
+  - gallery/snapinsta.app_137064249_208570440932565_7387727118872436390_n_1080.jpg
 brands_title: 'OUR BRANDS'
 brands_text: "Sunset Hospitality Group remains committed to delivering unparalleled hospitality concepts, exceptional lifestyle experiences, unforgettable entertainment acts and culinary excellence. That's why we have tailored our offerings to cater to the needs of lifestyle enthusiasts through our four distinct divisions: Hotels & Resorts, Daylife, Dining, and Nightlife."
 gallery:

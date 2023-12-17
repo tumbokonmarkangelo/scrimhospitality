@@ -150,8 +150,7 @@ tabs:
           -
             handle: about_images
             field:
-              max_files: 2
-              min_files: 2
+              min_files: 1
               mode: grid
               container: assets
               restrict: false

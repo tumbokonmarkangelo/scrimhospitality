@@ -1,0 +1,10 @@
+title: q1
+qoute_text: 'SCRIM Group is definitely doing something ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor ultrices enim a tincidunt. Vivamus sed dui ultrices, consectetur ipsum ut, sollicitudin orci. Nunc eu metus ac ligula porttitor dapibus at id tellus.'
+qoute_author: 'Sam Verzosa'
+qoute_author_title: 'Business Mogul'
+qoute_images:
+  - dummy_600x300_ffffff_aaaaaa.png
+updated_by: 8e9abffb-d79b-46bd-9f70-6b8842586fbb
+updated_at: 1702771910
+qoute_image: dummy_600x300_ffffff_aaaaaa.png
+blueprint: qoute

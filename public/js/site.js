@@ -88,14 +88,14 @@ $(function () {
   });
 
   $('.about-slider').slick({
+    dots: true,
     arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
-    dots: true,
-    // nextArrow: '<button type="button" class="slick-prev"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg></button>',
-    // prevArrow: '<button type="button" class="slick-next"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>',
+    nextArrow: '<button type="button" class="slick-prev"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg></button>',
+    prevArrow: '<button type="button" class="slick-next"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>',
     responsive: [{
       breakpoint: 600,
       settings: {
@@ -114,6 +114,54 @@ $(function () {
     // settings: "unslick"
     // instead of a settings object
     ]
+  });
+
+  $('.gallery-images').slick({
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    nextArrow: '<button type="button" class="slick-prev"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path></svg></button>',
+    prevArrow: '<button type="button" class="slick-next"><svg class="w-20 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>',
+    responsive: [{
+      breakpoint: 1920,
+      settings: "unslick"
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    focusOnSelect: true,
+    infinite: true,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });
 
   /** ---------------------------- //
