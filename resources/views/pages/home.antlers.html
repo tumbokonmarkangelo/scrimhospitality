@@ -15,9 +15,18 @@
             </h1>
         </div>
     </div>
+    <div class="absolute bottom-0 w-full z-10 pb-10 flex justify-center">
+        <a href="/#About" >
+            <div class="scroll-down-container px-2 py-4 rounded-full border-2 border-white">
+                <svg class="w-6 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"></path>
+                </svg>
+            </div>
+        </a>
+    </div>
 </div>
 
-<div class="w-11/12 mx-auto py-2 px-4">
+<div id="About" class="w-11/12 mx-auto py-2 px-4">
     <div class="flex-1 flex gap-12 lg:gap-4 py-20 flex-col">
         <div class="lg:flex-1 animation-element animate-2 mb-10">
             <div class="about-slider">
@@ -170,16 +179,12 @@
     </div>
 </div>
 
-<div class="">        
-    <div>
-        {{ instagram limit="6" as="ig" }}
+<div>        
+    <div class="instagram-slider mb-0">
+        {{ taxonomy:instagram_posts }}
             <div>
-                {{ ig }}
-                    <a href="{{ permalink }}" >
-                        <img src="{{ thumbnail_url ?? media_url }}" alt="{{ caption }}" />
-                    </a>
-                {{ /ig }}
+                <img class="w-full h-64 object-cover" src="{{image}}">
             </div>
-        {{ /instagram }}
+        {{ /taxonomy:instagram_posts }}
     </div>
 </div>

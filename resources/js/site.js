@@ -87,6 +87,7 @@ $(function() {
         dots: true,
         arrows: true,
         infinite: true,
+        autoplay: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -140,6 +141,36 @@ $(function() {
             // instead of a settings object
           ]
         });
+
+    $('.instagram-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
     
     $('.slider-for').slick({
       slidesToShow: 1,
