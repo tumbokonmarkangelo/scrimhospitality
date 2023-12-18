@@ -79,23 +79,21 @@
     </div>
 </div>
 
-<div class="py-0 lg:py-20 mb-10 lg:mb-0">
-    <div class="flex gap-8 flex-col lg:flex-row">
-        <div class="w-full h-full grid grid-cols-2 lg:grid-cols-3">
-            {{taxonomy:gallery}}
-            <a href="/coming-soon">
-                <div class="gallery-image-hover relative flex-1 animation-element animate-2 add-overlay h-64 lg:h-96">
-                    <img class="object-cover w-full h-full" src="{{image}}">
-                    <div class="z-10 absolute bottom-0 left-0 flex flex-col p-2">
-                        <div class="text-white font-bold text-md lg:text-xl">{{title}}</div>
-                        <div class="text-white text-sm lg:text-md">{{text}}</div>
-                    </div>
+<!-- <div class="py-0 lg:py-20 mb-10 lg:mb-0"> -->
+    <div class="grid grid-cols-2 lg:grid-cols-3">
+        {{taxonomy:gallery}}
+        <a href="/coming-soon">
+            <div class="gallery-image-hover relative add-overlay h-64 lg:h-96">
+                <img class="object-cover w-full h-full" src="{{image}}">
+                <div class="z-10 absolute bottom-0 left-0 flex flex-col p-2">
+                    <div class="text-white font-bold text-md lg:text-xl">{{title}}</div>
+                    <div class="text-white text-sm lg:text-md">{{text}}</div>
                 </div>
-            </a>
-            {{/taxonomy:gallery}}
-        </div>
+            </div>
+        </a>
+        {{/taxonomy:gallery}}
     </div>
-</div>
+<!-- </div> -->
 
 <div class="w-11/12 mx-auto py-6 lg:py-20 px-4 animation-element animate-1">
     <h1 class="text-2xl lg:text-5xl font-bold text-brown-2 uppercase mb-8">Features</h1>
