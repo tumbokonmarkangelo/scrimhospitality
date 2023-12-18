@@ -133,7 +133,8 @@ $(function() {
               breakpoint: 600,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
               }
             },
             // You can unslick at a given breakpoint now by adding:
@@ -186,12 +187,36 @@ $(function() {
       asNavFor: '.slider-for',
       dots: true,
       focusOnSelect: true,
-      infinite: true,responsive: [
+      infinite: true,
+      responsive: [
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });
+
+    $('.features-slider').slick({
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1920,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
           }
         },
       ]

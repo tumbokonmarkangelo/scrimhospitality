@@ -362,6 +362,9 @@ video {
 }.mx-auto {
   margin-left: auto;
   margin-right: auto;
+}.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }.mb-0 {
   margin-bottom: 0px;
 }.mb-10 {
@@ -410,6 +413,12 @@ video {
   height: 2.5rem;
 }.h-8 {
   height: 2rem;
+}.h-6 {
+  height: 1.5rem;
+}.h-4 {
+  height: 1rem;
+}.h-5 {
+  height: 1.25rem;
 }.max-h-20 {
   max-height: 5rem;
 }.w-10\/12 {
@@ -436,6 +445,8 @@ video {
   width: 2rem;
 }.w-10 {
   width: 2.5rem;
+}.w-5 {
+  width: 1.25rem;
 }.max-w-2xl {
   max-width: 42rem;
 }.max-w-3xl {
@@ -448,6 +459,15 @@ video {
   max-width: 24rem;
 }.flex-1 {
   flex: 1 1 0%;
+}.translate-y-20 {
+  --tw-translate-y: 5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.-translate-y-20 {
+  --tw-translate-y: -5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.-translate-y-10 {
+  --tw-translate-y: -2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -481,6 +501,10 @@ video {
   gap: 1.5rem;
 }.gap-8 {
   gap: 2rem;
+}.gap-2 {
+  gap: 0.5rem;
+}.gap-1 {
+  gap: 0.25rem;
 }.overflow-hidden {
   overflow: hidden;
 }.whitespace-nowrap {
@@ -489,6 +513,8 @@ video {
   border-radius: 9999px;
 }.border-2 {
   border-width: 2px;
+}.border {
+  border-width: 1px;
 }.border-b-2 {
   border-bottom-width: 2px;
 }.border-brown-2 {
@@ -533,6 +559,9 @@ video {
   background-position: left top;
 }.bg-left-bottom {
   background-position: left bottom;
+}.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }.object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -571,6 +600,9 @@ video {
 }.px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }.pb-4 {
   padding-bottom: 1rem;
 }.pb-6 {
@@ -621,6 +653,8 @@ video {
   text-decoration-line: underline;
 }.opacity-25 {
   opacity: 0.25;
+}.opacity-10 {
+  opacity: 0.1;
 }/* Trigger  */.animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -652,6 +686,9 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     backface-visibility: hidden;
 }@media (min-width: 1024px) {.lg\:order-none {
     order: 0;
+  }.lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }.lg\:flex {
     display: flex;
   }.lg\:h-12 {
@@ -682,6 +719,8 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     justify-content: flex-end;
   }.lg\:justify-center {
     justify-content: center;
+  }.lg\:justify-between {
+    justify-content: space-between;
   }.lg\:gap-4 {
     gap: 1rem;
   }.lg\:gap-16 {
@@ -690,6 +729,8 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     padding: 2.5rem;
   }.lg\:p-8 {
     padding: 2rem;
+  }.lg\:p-4 {
+    padding: 1rem;
   }.lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -699,6 +740,15 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
   }.lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }.lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }.lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }.lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }.lg\:text-left {
     text-align: left;
   }.lg\:text-center {
@@ -708,5 +758,14 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
   }.lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }.lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }.lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }.lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

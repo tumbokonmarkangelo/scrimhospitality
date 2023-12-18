@@ -2,8 +2,8 @@
     <div class="coming-bg-with-overlay">
         <img class="absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full" src="{{banner_background}}">
     </div>
-    <div class="flex-1 relative z-10 p-4 animation-element animate-1">
-        <div class="flex items-center justify-center flex-col gap-6">
+    <div class="flex-1 relative z-10 p-4  animation-element animate-1">
+        <div class="flex items-center justify-center flex-col gap-6 -translate-y-10">
             <h1 class="text-xl lg:text-5xl flex w-full justify-center flex-row">
                 <span class="flex-1 text-right lg:py-4">bringing</span>
                 <div class="scroll-up-slider w-40 lg:w-auto max-w-sm lg:px-4 flex flex-col mb-0">
@@ -31,20 +31,20 @@
         <div class="lg:flex-1 animation-element animate-2 mb-10">
             <div class="about-slider">
                 {{about_images}}
-                <div class="p-4">
+                <div class="lg:p-4">
                     <img class="w-full h-64 object-cover" src="{{url}}">
                 </div>
                 {{/about_images}}
             </div>
         </div>
         <div class="flex-1 flex items-center animation-element animate-2">
-            <div class="flex flex-col lg:flex-row col-2 gap-4 px-5">
+            <div class="flex flex-col lg:flex-row col-2 gap-4 lg:px-5">
                 <div class="flex-1">
                     <h1 class="text-2xl lg:text-5xl font-bold text-brown-2 mb-10">{{about_title}}</h1>
-                    <div class="text-lg">{{about_text_1}}</div>
+                    <div class="text-md lg:text-lg">{{about_text_1}}</div>
                 </div>
                 <div class="flex-1">
-                    <div class="text-lg">{{about_text_2}}</div>
+                    <div class="text-md lg:text-lg">{{about_text_2}}</div>
                     <div class="flex justify-end mt-10">
                         <a href="/#About" class="border-b-2 border-gray-4 text-black font-semibold uppercase text-lg py-6 w-auto">
                             More About Us
@@ -60,12 +60,12 @@
 </div>
 
 <div class="relative">
-    <div class="absolute top-0 left-0 w-full h-full bg-contain opacity-25" style="background-image: url('/assets/about-bg.jpg');"></div>
+    <div class="absolute top-0 left-0 w-full h-full bg-contain opacity-10" style="background-image: url('/assets/about-bg.jpg');"></div>
     <div class="w-11/12 mx-auto py-20 px-4 animation-element animate-1 relative z-10">
         <div class="flex gap-4 flex-col lg:flex-row">
             <div class="flex-1 flex flex-col gap-4">
                 <h1 class="text-2xl lg:text-5xl font-bold text-brown-2">{{brands_title}}</h1>
-                <div class="text-lg max-w-3xl">{{brands_text}}</div>
+                <div class="text-md lg:text-lg max-w-3xl">{{brands_text}}</div>
             </div>
             <div class="flex-1 flex items-center justify-start lg:justify-center">
                 <a href="/#Features" class="text-white bg-black font-semibold uppercase text-lg px-6 py-6 w-auto">
@@ -84,8 +84,11 @@
         <div class="gallery-images w-full h-full grid grid-cols-1 lg:grid-cols-3 gap-8">
             {{taxonomy:gallery}}
             <div class="relative flex-1 animation-element animate-2 add-overlay">
-                <img class="object-cover w-full h-96" src="{{image}}">
-                <div class="z-10 absolute bottom-0 left-0 text-white p-2 text-xl">{{title}}</div>
+                <img class="object-cover w-full h-64" src="{{image}}">
+                <div class="z-10 absolute bottom-0 left-0 flex flex-col gap-2 p-2">
+                    <div class="text-white font-bold text-lg lg:text-xl">{{title}}</div>
+                    <div class="text-white text-md lg:text-lg">{{text}}</div>
+                </div>
             </div>
             {{/taxonomy:gallery}}
         </div>
@@ -94,7 +97,7 @@
 
 <div class="w-11/12 mx-auto py-20 px-4 animation-element animate-1">
     <h1 class="text-2xl lg:text-5xl font-bold text-brown-2 uppercase mb-8">Features</h1>
-    <div class="flex gap-16 justify-between flex-col lg:flex-row">
+    <div class="flex gap-16 justify-between flex-col lg:flex-row features-slider">
         {{ taxonomy:features }}
         <div class="flex flex-1 gap-4 flex-col bg-gray-2 max-w-lg">
             <div class="px-4 pt-4 flex gap-8">
@@ -104,15 +107,17 @@
             <div class="px-4 pb-4">
                 <div class="text-xl">{{content}}</div>
             </div>
-            <div>
-                <div class="relative flex-1 h-80">
-                    <img class="object-cover w-full h-full" src="{{image}}">
+            <div class="flex gap-4 flex-col">
+                <div>
+                    <div class="relative flex-1 h-64">
+                        <img class="object-cover w-full h-full" src="{{image}}">
+                    </div>
                 </div>
-            </div>
-            <div class="px-6 pb-6">
-                <svg class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                </svg>  
+                <div class="px-6 pb-6">
+                    <svg class="w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>  
+                </div>
             </div>
         </div>
         {{ /taxonomy:features }}
@@ -136,9 +141,9 @@
         <div>
             <div class="flex items-center flex-col mb-10">
                 <img class="object-cover w-20 rotate-180 mb-10" src="/assets/quotation.svg">
-                <p class="max-w-2xl mb-10 text-xl">{{qoute_text}}</p>
-                <p class="text-2xl">{{qoute_author}}</p>
-                <p class="text-lg text-gray-3">{{qoute_author_title}}</p>
+                <p class="max-w-2xl mb-10 text-lg lg:text-xl">{{qoute_text}}</p>
+                <p class="text-xl lg:text-2xl">{{qoute_author}}</p>
+                <p class="text-md lg:text-lg text-gray-3">{{qoute_author_title}}</p>
             </div>
         </div>
         {{/taxonomy:qoutes}}
@@ -160,7 +165,7 @@
         {{ taxonomy:brands }}
         <div class="p-4">
             <div class="flex items-center justify-center">
-                <img class="h-32" src="{{logo}}">
+                <img class="object-contain h-32" src="{{logo}}">
             </div>
         </div>
         {{ /taxonomy:brands }}
