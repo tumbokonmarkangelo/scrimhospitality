@@ -23,3 +23,16 @@
     top: 20%;
     width: 80px;
 }
+
+.gallery-image-hover:hover {
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #242424;
+    > img {
+        transition: all 300ms ease;
+        position: relative;
+        z-index: 100;
+        transform: scale(1.2);
+    }
+}

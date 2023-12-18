@@ -1,4 +1,4 @@
-title: Pages
+title: Pagesxr
 tabs:
   main:
     display: Main
@@ -86,7 +86,6 @@ tabs:
               replicator_preview: true
               hide_display: false
               max_files: 1
-              min_files: 1
       -
         display: 'About Section'
         fields:
@@ -150,7 +149,6 @@ tabs:
           -
             handle: about_images
             field:
-              min_files: 1
               mode: grid
               container: assets
               restrict: false
@@ -204,85 +202,6 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-      -
-        display: 'Gallery Section (to be removed)'
-        fields:
-          -
-            handle: gallery
-            field:
-              mode: grid
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: Gallery
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-      -
-        display: 'Qoute Section (to be removed)'
-        fields:
-          -
-            handle: qoute_text
-            field:
-              antlers: false
-              type: textarea
-              display: 'Qoute text'
-              icon: textarea
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: qoute_author
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Qoute author'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: qoute_author_title
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Qoute author title'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: qoute_images
-            field:
-              mode: grid
-              container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: 'Qoute images'
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-              min_files: 1
   sidebar:
     display: Sidebar
     sections:

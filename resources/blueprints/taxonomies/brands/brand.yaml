@@ -42,4 +42,4 @@ tabs:
               required: true
               validate:
                 - required
-title: brand
+title: 'brands logo'

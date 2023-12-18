@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="flex-1 flex items-center animation-element animate-2">
-            <div class="flex flex-col lg:flex-row col-2 gap-4 lg:px-5">
+            <div class="flex flex-col lg:flex-row col-2 gap-4 lg:gap-16 lg:px-5">
                 <div class="flex-1">
                     <h1 class="text-2xl lg:text-5xl font-bold text-brown-2 mb-1 lg:mb-5">{{about_title}}</h1>
                     <div class="text-md lg:text-lg">{{about_text_1}}</div>
@@ -67,7 +67,7 @@
                 <h1 class="text-2xl lg:text-5xl font-bold text-brown-2">{{brands_title}}</h1>
                 <div class="text-md lg:text-lg max-w-3xl">{{brands_text}}</div>
             </div>
-            <div class="flex-1 flex items-center justify-start lg:justify-center">
+            <div class="flex-1 flex items-center justify-start lg:justify-end">
                 <a href="/#Features" class="text-white bg-black font-semibold uppercase lg:text-lg p-3 lg:p-6 w-auto">
                     More Concepts
                     <svg class="w-4 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -83,13 +83,15 @@
     <div class="flex gap-8 flex-col lg:flex-row">
         <div class="w-full h-full grid grid-cols-2 lg:grid-cols-3">
             {{taxonomy:gallery}}
-            <div class="relative flex-1 animation-element animate-2 add-overlay">
-                <img class="object-cover w-full h-64 lg:h-96" src="{{image}}">
-                <div class="z-10 absolute bottom-0 left-0 flex flex-col p-2">
-                    <div class="text-white font-bold text-md lg:text-xl">{{title}}</div>
-                    <div class="text-white text-sm lg:text-md">{{text}}</div>
+            <a href="/coming-soon">
+                <div class="gallery-image-hover relative flex-1 animation-element animate-2 add-overlay h-64 lg:h-96">
+                    <img class="object-cover w-full h-full" src="{{image}}">
+                    <div class="z-10 absolute bottom-0 left-0 flex flex-col p-2">
+                        <div class="text-white font-bold text-md lg:text-xl">{{title}}</div>
+                        <div class="text-white text-sm lg:text-md">{{text}}</div>
+                    </div>
                 </div>
-            </div>
+            </a>
             {{/taxonomy:gallery}}
         </div>
     </div>

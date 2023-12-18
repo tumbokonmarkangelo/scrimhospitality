@@ -806,6 +806,10 @@ to { opacity: 1; transform: none; } }.fadeInRight { animation-name: fadeInRight;
     gap: 2rem;
   }.lg\:gap-2 {
     gap: 0.5rem;
+  }.lg\:gap-10 {
+    gap: 2.5rem;
+  }.lg\:gap-20 {
+    gap: 5rem;
   }.lg\:p-10 {
     padding: 2.5rem;
   }.lg\:p-8 {
